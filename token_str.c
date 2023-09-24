@@ -1,4 +1,4 @@
-#imclude "monty.h"
+#include "monty.h"
 
 char **strtow(char *str, char *delims);
 int is_delim(char ch, char *delims);

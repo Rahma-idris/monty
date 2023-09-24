@@ -1,4 +1,4 @@
-#include "monty.c"
+#include "monty.h"
 
 void free_stack(stack_t **stack);
 int init_stack(stack_t **stack);
@@ -6,7 +6,7 @@ int check_mode(stack_t *stack);
 
 /**
  * free_stack - Frees a stack_t stack.
- * @stack: A pointer to the top (stack) or
+ * @stack: Pointer to the top (stack) or
  *         bottom (queue) of a stack_t.
  */
 void free_stack(stack_t **stack)
@@ -22,8 +22,8 @@ void free_stack(stack_t **stack)
 }
 
 /**
- * init_stack - Initializes a stack_t stack with beginning
- *              stack and ending queue nodes.
+ * init_stack - To initialise a stack_t stack with beginning
+ * stack and ending queue nodes.
  * @stack: A pointer to an unitialized stack_t stack.
  *
  * Return: If an error occurs - EXIT_FAILURE.
